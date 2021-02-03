@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <style type="text/css">
+
+    html{
+  scroll-behavior: smooth;
+}
+
+
+*{ margin: 0; padding : 0; box-sizing: border-box; font-family: 'Luckiest Guy', cursive;}
+
+  	#title{
+  		color: #F4F0F0;
+  	}
+    #description{
+      color: #F4F0F0;
+    }
+    .form-section{
+             width: 1000px; 
+            height: 1700px; 
+             margin: auto;
+             background-color: transparent;
+            background: rgba(245,245,220,0.7);
+            border-radius: 5px; 
+            padding: 5px;
+
+          }
+
+body{
+  		background-image: url(images/imageo.jpg);
+      width: 100%;
+      height: 100%;
+  	}
+
+             
+label{
+	color: #B22222;
+}
+.form-radio{
+  padding: 10px;
+}
+.form-group{
+  padding: 10px;
+}
+#name{
+  border-bottom: 2px solid #696969;
+   background-color: #CDC9C9;
+  
+}
+#name:focus {
+  border: 3px solid #555;
+}
+#email{
+  border-bottom: 2px solid #696969;
+   background-color: #CDC9C9;
+  
+}
+#email:focus {
+  border: 3px solid #555;
+}
+
+#number{
+  border-bottom: 2px solid #696969;
+   background-color: #CDC9C9;
+  
+}
+#number:focus {
+  border: 3px solid #555;
+}
+
+#dropdown{
+  border-bottom: 2px solid #696969;
+   background-color: #CDC9C9;
+
+}
+#dropdown:focus {
+  border: 3px solid #555;
+}
+
+#message{
+  border-bottom: 2px solid #696969;
+   background-color: #CDC9C9;
+
+}
+#message:focus {
+  border: 3px solid #555;
+}
+
+  </style>
+
+</head>
+<body>
+
+	<h1 id="title" class="text-center mt-4">Are You A Movie Geek
+	</h1>
+	<p id="description" class="text-center mt-3"> This is a survey for people who loves watching movies </p>
+
+
+	<section>
+		<div class="container form-section ">
+			<div class="container mx-auto">
+	<form action="/action_page.php" id="survey-form">
+  <div class="form-group">
+    <label for="name" id="name-label">Name</label>
+    <input type="name" class="form-control" id="name" required autocomplete="off" aria-describedby="emailHelp" placeholder="Enter name">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputEmail1" id="email-label">Email address</label>
+    <input type="email" class="form-control" id="email" required autocomplete="off" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+
+    <div class="form-check">
+	<label for="name" id="name-label">What is your Gender ?</label>
+	<br>
+
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male">
+  <label class="form-check-label" for="inlineRadio1">Male</label>
+</div>
+   <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="female">
+  <label class="form-check-label" for="inlineRadio1">Female</label>
+</div>
+   <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="other">
+  <label class="form-check-label" for="inlineRadio1">Other</label>
+</div>
+</div>
+
+<div class="form-check form-radio">
+  	<label for="name" id="name-label">What do you prefer to watch ?</label>
+  	<br>
+  <input class="form-check-input" name="movies" type="checkbox" value="movies" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Movies
+  </label>
+  <br>
+  <input class="form-check-input" name="Series" type="checkbox" value="series" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Series
+  </label>
+  <br>
+</div>
+
+<div class="form-check">
+  	<label for="name" id="name-label">What kinds of movie do you like ?</label>
+  	<br>
+  <input class="form-check-input" name="comedy" type="checkbox" value="comedy" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Comedy
+  </label>
+  <br>
+  <input class="form-check-input" name="Science" type="checkbox" value="Science fiction" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Science fiction
+  </label>
+  <br>
+  <input class="form-check-input" name="Thriller" type="checkbox" value="Thriller" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Thriller
+  </label>
+  <br>
+  <input class="form-check-input" name="Romantic" type="checkbox" value="Romantic" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Romantic
+  </label>
+  <br>
+  <input class="form-check-input" name="Cartoon" type="checkbox" value="Cartoon" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Cartoon
+  </label>
+  <br>
+  <input class="form-check-input" name="Animation" type="checkbox" value="Animation" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Animation
+  </label>
+  <br>
+  <input class="form-check-input" name="Horror" type="checkbox" value="Horror" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Horror
+  </label>
+   <br>
+  <input class="form-check-input" name="Action" type="checkbox" value="Action" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Action
+  </label>
+   <br>
+  <input class="form-check-input" name="Other" type="checkbox" value="Other" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Other
+  </label>
+  <br>
+</div>
+
+<div class="form-check form-radio">
+  	<label for="name" id="name-label">Which way do you prefer to Watch ?</label>
+  	<br>
+  <input class="form-check-input" name="online" type="checkbox" value="online" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Online
+  </label>
+  <br>
+  <input class="form-check-input" name="Ontv" type="checkbox" value="ontv" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    On Tv
+  </label>
+  <br>
+  <input class="form-check-input" name="cinema" type="checkbox" value="cinema" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Go to the Cinema
+  </label>
+  <br>
+  <input class="form-check-input" name="dvd" type="checkbox" value="dvd" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+   On DVD
+  </label>
+  <br>
+</div>
+
+
+
+ <div class="form-check form-radio">
+	<label for="name" id="name-label">How often do you usually watch a movie ?</label>
+	<br>
+
+  <div class="form-check ">
+  <input class="form-check-input" type="radio" name="movie" id="inlineRadio1" value="year">
+  <label class="form-check-label" for="inlineRadio1">Once a Year</label>
+</div>
+   <div class="form-check ">
+  <input class="form-check-input" type="radio" name="movie" id="inlineRadio1" value="month">
+  <label class="form-check-label" for="inlineRadio1">Once a month</label>
+</div>
+   <div class="form-check ">
+  <input class="form-check-input" type="radio" name="movie" id="inlineRadio1" value="onceweek">
+  <label class="form-check-label" for="inlineRadio1">Once a Week</label>
+</div>
+<div class="form-check ">
+  <input class="form-check-input" type="radio" name="movie" id="inlineRadio1" value="twiceweek">
+  <label class="form-check-label" for="inlineRadio1">Twice a Week</label>
+</div>
+<div class="form-check ">
+  <input class="form-check-input" type="radio" name="movie" id="inlineRadio1" value="Everyday">
+  <label class="form-check-label" for="inlineRadio1">Everyday</label>
+</div>
+</div>
+
+    <div class="form-group">
+    <label for="number" id="number-label">How many movies or episodes you have watched in a day ? (between 1 and 10 ):</label>
+<input type="number" id="number" name="quantity" min="1" max="10" placeholder="Enter number" style="width: 100px; border-radius: 4px">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Rate yourself if you are a Movie Geek</label>
+    <select class="form-control" id="dropdown" name="rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+</div>
+
+<div class="form-group">
+  <label for="message">Tell us, How much do you enjoy watching movies ?</label>
+  <textarea class="form-control" placeholder="Tell us your experience" rows="5" id="message" required autocomplete="off"></textarea>
+  </div>
+ 
+  <button type="submit" id="submit" class="btn  btn-dark shadow p-2">Submit</button>
+</form>
+</div>
+</div>
+</section>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
